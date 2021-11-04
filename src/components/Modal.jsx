@@ -38,7 +38,7 @@ function ModalComponent(props) {
         </Info>
       </Modal.Body>
       <Modal.Footer>
-        <Close_Btn onClick={props.onHide}>Close</Close_Btn>
+        <CloseBtn onClick={props.onHide}>Close</CloseBtn>
       </Modal.Footer>
     </Modal>
   );
@@ -50,7 +50,7 @@ const Info = styled.div`
   padding: 20px;
 `;
 
-const Close_Btn = styled.button`
+const CloseBtn = styled.button`
 margin:3px;
 font-family: 'Roboto',sans-serif;
 font-weight: 300;
