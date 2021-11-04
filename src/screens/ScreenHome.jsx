@@ -18,12 +18,14 @@ const ScreenHome = () => {
       });
   };
 
-  console.log(dados)
-  useEffect(() => {
+  // console.log(dados)
+
+  useEffect(()=>{
     setInterval(()=>{
       chamada();
     },15000)
-  });
+  },[])
+
   return (
     <C.Container>
       <TableComponent dados={dados}/>
